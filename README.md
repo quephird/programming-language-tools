@@ -4,6 +4,10 @@
 | Elixir | http://http://elixir-lang.org/ | `iex` | Mix | `mix new new_project` | Dependencies are enumerated in `mix.exs` by name and semver if using Hex, or by git repo if using just Mix ; `mix deps.get` fetches them | `mix compile` | https://hex.pm/ |  
 | Erlang | https://www.erlang.org/ | `erl` | [Rebar3](http://www.rebar3.org/) | `rebar3 new release new_project` | Dependencies are enumerated in `rebar.config` by name and semver if using Hex, or by git repo if using just Mix ; `mix deps.get` fetches them | `rebar3 compile` | https://hex.pm/ |  
 | Go | https://golang.org/ | [`gore`](https://github.com/motemen/gore) | There is no official one. | Read [this](https://golang.org/doc/code.html#Organization) for how set up a new project. | There is no official way; read [this](https://github.com/golang/go/wiki/PackageManagementTools) for a list. | `go build` | N/A |  
+| Haskell | https://www.haskell.org/ | `ghci`[¹](#haskell-compiler) | [Cabal](https://www.haskell.org/cabal/), [Stack](https://www.haskellstack.org/) | `cabal init`, or `stack new new_project simple` | `new_project.cabal` or `stack.yaml` | `cabal build` or `stack build` | https://hackage.haskell.org/ or https://www.stackage.org/ |
 | Java | https://www.java.com | [`java-repl`](https://github.com/albertlatacz/java-repl) | [Maven](https://maven.apache.org/), [Ant](https://http://ant.apache.org/) | `mvn -B archetype:generate...` | Dependencies are nominated in `pom.xml` by their Maven coordinates | `mvn compile` | https://mvnrepository.com/ |
 | Ruby  | https://www.ruby-lang.org/ | `irb` | [Bundler](http://bundler.io/) | `bundle gem new_project` | By name and semver using `gem install` and `Gemfile` | `bundle install` |  https://rubygems.org/ |  
 | Swift | https://swift.org/ | `swift` | Swift Package Manager | `swift package init --type executable` or use XCode | Dependencies are nominated in `Package.swift` by their git repo URL | `swift build` or build within XCode | N/A |  
+
+
+<a name="haskell-compiler">¹</a> This assumes, of course, that you are using GHC; there are other compilers.
