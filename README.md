@@ -13,6 +13,7 @@ I have no idea whether this will be actually useful to anyone else... and it's s
 | Java | https://www.java.com | [`java-repl`](https://github.com/albertlatacz/java-repl) | [Maven](https://maven.apache.org/), [Ant](https://http://ant.apache.org/) | `mvn -B archetype:generate...` | Listed in `pom.xml` by their Maven coordinates | `mvn compile` | https://mvnrepository.com/ |
 | Ruby  | https://www.ruby-lang.org/ | `irb` | [Bundler](http://bundler.io/) | `bundle gem new_project` | Added to `Gemfile` via `gem install` | `bundle install` |  https://rubygems.org/ |
 | Swift | https://swift.org/ | `swift` | Swift Package Manager | `swift package init --type executable` or use XCode | Listed in `Package.swift` by their git repo URL | `swift build` or build within XCode | N/A |
+| PHP | https://php.net/ | external tools like `boris` | - |  | Listed in `composer.json` by package name or git repo URL. Run `composer update` to load latest packages, `composer install` to install from existing `composer.lock`. | no build | https://packagist.org/ |
 
 
 <a name="fsharp-compiler">¹</a> This assumes the Mono platform; for the .NET platform, the REPL is started by running `fsi.exe`.
