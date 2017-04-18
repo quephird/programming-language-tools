@@ -1,3 +1,6 @@
+Of course all of this information is available elsewhere, but I felt like it would be somewhat useful to centralize a set of comparisons here. At a minimum, researching this and typing it all of out for myself will help me remember these details by virtue of muscle memory. This exercise certainly helped solidify my current understanding as well as revealed big holes in it.
+I have no idea whether this will be actually useful to anyone else... and it's still a work in progress and most certainly not comprehensive. I also thought it was kind of interesting to see the similarities and differences of tools there are for them.
+
 | PL | Home page | How to start a REPL | Project management tool |  How to create a new project | How to manage dependencies | How to build a project | Library repository |  
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Clojure | http://clojure.org | `java -cp clojure-1.8.0.jar clojure.main` <br/> or `lein repl` | [Leiningen](https://leiningen.org/) | `lein new new-project` | Dependencies are nominated in `project.clj` by their Maven coordinates; `lein deps` fetches them | `lein compile` | https://clojars.org |  
