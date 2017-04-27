@@ -11,12 +11,16 @@ I have no idea whether this will be actually useful to anyone else... and it's s
 | Go | https://golang.org/ | [`gore`](https://github.com/motemen/gore) | There is no official one. | Read [this](https://golang.org/doc/code.html#Organization) for how set up a new project. | Read [this](https://github.com/golang/go/wiki/PackageManagementTools) for various different methods. | `go build` | N/A |
 | Haskell | https://www.haskell.org/ | `ghci`[²](#haskell-compiler) | [Cabal](https://www.haskell.org/cabal/), [Stack](https://www.haskellstack.org/) | `cabal init`, or `stack new new_project simple` | Listed in `new_project.cabal` or `stack.yaml` | `cabal build` or `stack build` | https://hackage.haskell.org/ or https://www.stackage.org/ |
 | Java | https://www.java.com | [`java-repl`](https://github.com/albertlatacz/java-repl) | [Maven](https://maven.apache.org/), [Ant](https://http://ant.apache.org/) | `mvn -B archetype:generate...` | Listed in `pom.xml` by their Maven coordinates | `mvn compile` | https://mvnrepository.com/ |
+| OCaml | https://ocaml.org/ | `ocaml` or [`utop`](https://github.com/diml/utop)[³](#utop) | The closest analogue to other PLs is [OASIS](http://oasis.forge.ocamlcore.org/) | There is no scaffolding tool. | If using OASIS, list them by name in the `_oasis` file [⁴](#ocamlfind) | `make`[⁵](#ocamlbuild) | https://opam.ocaml.org/packages |
 | PHP | https://php.net/ | `php -a` or [Boris](https://github.com/borisrepl/boris) | [Yeoman](http://yeoman.io/) with [Generator-BarePHP](https://github.com/juliangut/generator-barephp) | `yo barephp` | Listed in `composer.json` by package name or git repo URL if using [Composer](https://getcomposer.org/) | N/A | https://packagist.org/ |
-| Ruby  | https://www.ruby-lang.org/ | `irb` | [Bundler](http://bundler.io/) | `bundle gem new_project` | Added to `Gemfile` via `gem install` | `bundle install` |  https://rubygems.org/ |
-| Rust | https://www.rust-lang.org/ | [`rusti`](https://github.com/murarth/rusti)[³](#rusti) | [Cargo](https://crates.io/) | `cargo new new_project` | Listed in `Cargo.toml` by name and semver | `cargo build` | https://crates.io/ |
+| Ruby | https://www.ruby-lang.org/ | `irb` | [Bundler](http://bundler.io/) | `bundle gem new_project` | Added to `Gemfile` via `gem install` | `bundle install` |  https://rubygems.org/ |
+| Rust | https://www.rust-lang.org/ | [`rusti`](https://github.com/murarth/rusti)[⁶](#rusti) | [Cargo](https://crates.io/) | `cargo new new_project` | Listed in `Cargo.toml` by name and semver | `cargo build` | https://crates.io/ |
 | Swift | https://swift.org/ | `swift` | Swift Package Manager | `swift package init --type executable` or use XCode | Listed in `Package.swift` by their git repo URL | `swift build` or build within XCode | N/A |
 
 
 <a name="fsharp-compiler">¹</a> This assumes the Mono platform; for the .NET platform, the REPL is started by running `fsi.exe`.  
 <a name="haskell-compiler">²</a> This assumes, of course, that you are using GHC; there are other compilers.  
-<a name="rusti">³</a> As of this writing, latest version of `rusti` only works with the nightly build of Rust from 2016/08/01.  
+<a name="utop">³</a> UTop offers a _much_ better user experience than the bultin REPL.  
+<a name="ocamlfind">⁴</a> OASIS relies on `ocamlfind` for name resolution of dependencies.  
+<a name="ocamlbuild">⁵</a> OASIS generates various files for configuring the build and relies on `ocamlbuild` for building the project. See the [documentation](http://ocaml.org/learn/tutorials/setting_up_with_oasis.html#Goingfurther) for details.  
+<a name="rusti">⁶</a> As of this writing, the latest version of `rusti` only works with the nightly build of Rust from 2016/08/01.  
