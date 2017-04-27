@@ -19,7 +19,7 @@ I have no idea whether this will be actually useful to anyone else... and it's s
 
 
 <a name="fsharp-compiler">¹</a> This assumes the Mono platform; for the .NET platform, the REPL is started by running `fsi.exe`.  
-<a name="haskell-compiler">²</a> This assumes, of course, that you are using GHC; there are other compilers.  
+<a name="haskell-compiler">²</a> This assumes, of course, that you are using GHC; there are other compilers. See [this page](https://wiki.haskell.org/Implementations) for a detailed list.  
 <a name="utop">³</a> UTop offers a _much_ better user experience than the bultin REPL.  
 <a name="ocamlfind">⁴</a> OASIS relies on `ocamlfind` for name resolution of dependencies.  
 <a name="ocamlbuild">⁵</a> OASIS generates various files for configuring the build and relies on `ocamlbuild` for building the project. See the [documentation](http://ocaml.org/learn/tutorials/setting_up_with_oasis.html#Goingfurther) for details.  
