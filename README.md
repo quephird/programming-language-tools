@@ -14,9 +14,10 @@ I have no idea whether this will be actually useful to anyone else... and it's s
 | Lua | https://www.lua.org/ | `lua` | [Luarocks](https://luarocks.org/) seems to be the closest analogue to other PLs | Running `luarocks write-rockspec` in the project root generates a so-called rockfile | Listed in `new_project.rockfile` | `luarocks build` | http://luarocks.org/modules |
 | OCaml | https://ocaml.org/ | `ocaml` or [`utop`](https://github.com/diml/utop)[³](#utop) | [OASIS](http://oasis.forge.ocamlcore.org/) seems to be the closest analogue to other PLs | There is no scaffolding tool. | If using OASIS, list them by name in the `_oasis` file [⁴](#ocamlfind) | `make`[⁵](#ocamlbuild) | https://opam.ocaml.org/packages |
 | PHP | https://php.net/ | `php -a` or [Boris](https://github.com/borisrepl/boris) | [Yeoman](http://yeoman.io/) with [Generator-BarePHP](https://github.com/juliangut/generator-barephp) | `yo barephp` | Listed in `composer.json` by package name or git repo URL if using [Composer](https://getcomposer.org/) | N/A | https://packagist.org/ |
-| Ruby | https://www.ruby-lang.org/ | `irb` | [Bundler](http://bundler.io/) | `bundle gem new_project` | Added to `Gemfile` via `gem install` | `bundle install` |  https://rubygems.org/ |
-| Rust | https://www.rust-lang.org/ | [`rusti`](https://github.com/murarth/rusti)[⁶](#rusti) | [Cargo](https://crates.io/) | `cargo new new_project` | Listed in `Cargo.toml` by name and semver | `cargo build` | https://crates.io/ |
-| Swift | https://swift.org/ | `swift` | Swift Package Manager | `swift package init --type executable` or use XCode | Listed in `Package.swift` by their git repo URL | `swift build` or build within XCode | N/A |
+| Python | https://www.python.org/ | `python` for 2.7.x, `python3` for 3.6.x | There is no official one | There is no official one but there is [`pyscaffold`](https://github.com/blue-yonder/pyscaffold/) | Listed in `requirements.txt`, installed with `pip install`[⁶](#virtualenv) | There is no need to build because code is interpreted | https://pypi.python.org/pypi |
+| Ruby | https://www.ruby-lang.org/ | `irb` | [Bundler](http://bundler.io/) | `bundle gem new_project` | Added to `Gemfile` via `gem install` | There is no need to build because code is interpreted |  https://rubygems.org/ |
+| Rust | https://www.rust-lang.org/ | [`rusti`](https://github.com/murarth/rusti)[⁷](#rusti) | [Cargo](https://crates.io/) | `cargo new new_project` | Listed in `Cargo.toml` by name and semver | `cargo build` | https://crates.io/ |
+| Swift | https://swift.org/ | `swift` | Swift Package Manager | `swift package init --type executable` or use XCode | Listed in `Package.swift` by their git repo URL | `swift build` or build within XCode | There is no official one but IBM manages one, https://packagecatalog.com/ |
 
 
 <a name="fsharp-compiler">¹</a> This assumes the Mono platform; for the .NET platform, the REPL is started by running `fsi.exe`.  
@@ -24,4 +25,5 @@ I have no idea whether this will be actually useful to anyone else... and it's s
 <a name="utop">³</a> UTop offers a _much_ better user experience than the bultin REPL.  
 <a name="ocamlfind">⁴</a> OASIS relies on `ocamlfind` for name resolution of dependencies.  
 <a name="ocamlbuild">⁵</a> OASIS generates various files for configuring the build and relies on `ocamlbuild` for building the project. See the [documentation](http://ocaml.org/learn/tutorials/setting_up_with_oasis.html#Goingfurther) for details.  
-<a name="rusti">⁶</a> As of this writing, the latest version of `rusti` only works with the nightly build of Rust from 2016/08/01.  
+<a name="virtualenv">⁶</a> [`virtualenv`](https://virtualenv.pypa.io/) manages multiple Python environments such that each project has its own interpreter and installed packages.  
+<a name="rusti">⁷</a> As of this writing, the latest version of `rusti` only works with the nightly build of Rust from 2016/08/01.  
