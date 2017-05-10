@@ -29,7 +29,7 @@ I have no idea whether this will be actually useful to anyone else... and it's s
 <a name="csharp-repl">¹</a> This assumes the Mono platform; for the .NET platform, there is a REPL available outside Visual Studio [here](http://scriptcs.net/).  
 <a name="fsharp-repl">²</a> This assumes the Mono platform; for the .NET platform, the REPL is started by running `fsi.exe`.  
 <a name="haskell-compiler">³</a> This assumes, of course, that you are using GHC; there are other compilers. See [this page](https://wiki.haskell.org/Implementations) for a detailed list.  
-<a name="utop">⁴</a> Julia can also be run in a notebook interface through a browser. See [this article](https://github.com/JuliaLang/IJulia.jl) for details on installation.
+<a name="utop">⁴</a> Julia can also be run in a notebook interface through a browser. See [this article](https://github.com/JuliaLang/IJulia.jl) for details on installation.  
 <a name="utop">⁵</a> UTop offers a _much_ better user experience than the bultin REPL.  
 <a name="ocamlfind">⁶</a> OASIS relies on `ocamlfind` for name resolution of dependencies.  
 <a name="ocamlbuild">⁷</a> OASIS generates various files for configuring the build and relies on `ocamlbuild` for building the project. See the [documentation](http://ocaml.org/learn/tutorials/setting_up_with_oasis.html#Goingfurther) for details.  
